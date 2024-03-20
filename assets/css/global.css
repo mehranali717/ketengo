@@ -144,12 +144,14 @@
 }
 
 :root {
-    --fill-transparent-grey: #FFF8F869;
+    --fill-transparent-grey: #cbcbcb7d;
     --fill-base-white: #fff;
     --fill-base-black: #000;
     --fill-transparent-black: #100C0CAB;
     --fill-royal-blue: #011794;
     --fill-base-wheat: #FEF7F7;
+    --fill-black-78:#00000078;
+    --fill-base-gray:#D9D9D966;
 }
 
 * {
