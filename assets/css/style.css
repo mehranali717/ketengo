@@ -5,24 +5,33 @@ header {
   position: fixed;
   width: 100%;
   z-index: 999;
-  margin: 48px auto 0px !important;
+  margin-top: 20px;
 }
 
-header.content-inner {
+header .content-inner {
   background-color: var(--fill-transparent-grey);
   border-radius: 30px;
   padding: 12px 21px;
   max-width: 1236px;
   width: 100%;
   backdrop-filter: blur(5px);
+  margin: 0px auto;
 }
-.navbar-collapse{
+
+.navbar-collapse {
   flex-grow: unset;
+  background-color: var(--fill-base-white);
+  border-radius: 20px;
 }
+
 .logo {
   max-width: 154px;
   width: 100%;
   display: inline-flex;
+}
+
+.navbar-nav {
+  padding: 20px 0px;
 }
 
 .navbar-nav .nav-item {
@@ -36,15 +45,16 @@ header.content-inner {
 
 .navbar-nav .nav-item a {
   font-size: 16.77px;
-  color: var(--fill-base-white) !important;
+  color: var(--fill-base-white);
 }
 
-.navbar-nav .nav-item:nth-child(1) {
-  padding-left: 0px;
-}
 
 .navbar-nav .nav-item:last-child {
   padding-right: 0px;
+}
+
+header .default-btn {
+  margin: 20px 0px;
 }
 
 /* hero styling */
@@ -54,7 +64,7 @@ header.content-inner {
   background-position: center 0%;
   background-size: cover;
   min-height: 100vh;
-  padding: 30px 0px;
+  padding: 90px 0px;
 }
 
 .hero h1 {
@@ -294,6 +304,7 @@ header.content-inner {
 
 .process-wrapper .card {
   background-color: transparent;
+  height: 100%;
 }
 
 .process-wrapper .cards-wrapper {
@@ -308,6 +319,7 @@ header.content-inner {
   color: var(--fill-base-white);
   text-align: center;
   position: relative;
+  padding: 30px 21px;
 }
 
 .process-wrapper .cards-wrapper .card p::after {
@@ -315,23 +327,23 @@ header.content-inner {
   position: absolute;
   width: 25px;
   height: 25px;
-  background: #8C4760;
-  outline: 1px solid #fff;
+  background: var(--fill-Mulberry-mist);
+  outline: 1px solid var(--fill-base-white);
   padding: 10px;
   border-radius: 50%;
-  top: -80%;
+  top: 52%;
   transform: translate(50%, -50%);
-  right: 50%;
+  left: -8%;
 }
 
 .process-wrapper .cards-wrapper .row div:not(:last-child) p::before {
   content: "";
   position: absolute;
-  width: calc(100% + 25px);
-  height: 1px;
-  background: #fff;
-  top: -80%;
-  left: 50%;
+  height: calc(100% + 85px);
+  width: 1px;
+  background: var(--fill-base-white);
+  top: 0%;
+  left: 0%;
 }
 
 /* process-wrapper section ends*
@@ -618,9 +630,7 @@ footer .footer-navlist li a {
 /* Media queries */
 /* media 425px */
 @media only screen and (min-width: 425px) {
-  .hero {
-    padding: 50px 0px;
-  }
+
 
   .benefits-wrapper {
     padding: 50px 0px;
@@ -670,12 +680,19 @@ footer .footer-navlist li a {
   .contactus-wrapper .section-heading {
     font-size: 40px !important;
   }
+
+  .process-wrapper .cards-wrapper .row div:not(:last-child) p::before {
+    left: 6%;
+  }
+  .process-wrapper .cards-wrapper .card p::after {
+    left: 0%;
+  }
 }
 
 /* media 576px */
 @media only screen and (min-width: 576px) {
-  .hero {
-    padding: 70px 0px;
+  header {
+    padding: 0px 20px;
   }
 
   .benefits-wrapper {
@@ -725,10 +742,20 @@ footer .footer-navlist li a {
     clip-path: unset;
     max-width: 100%;
   }
+  .process-wrapper .cards-wrapper .row div:not(:last-child) p::before {
+    left: 15%;
+  }
+  .process-wrapper .cards-wrapper .card p::after {
+    left: 11%;
+  }
 }
 
 /* media 768px */
 @media only screen and (min-width: 768px) {
+  header {
+    margin-top: 30px;
+  }
+
   .hero {
     padding: 150px 0px;
   }
@@ -739,11 +766,34 @@ footer .footer-navlist li a {
 
   }
 
-
+  .process-wrapper .cards-wrapper .card p::after {
+    left: 12%;
+  }
 }
 
 /* media 992px */
 @media only screen and (min-width: 992px) {
+  header {
+    margin-top: 48px;
+  }
+
+  .navbar-collapse {
+    background-color: transparent;
+    border-radius: 0px;
+  }
+
+  .navbar-nav {
+    padding: 0px;
+  }
+
+  .navbar-nav .nav-item a {
+    color: var(--fill-base-white) !important;
+  }
+
+  header .default-btn {
+    margin: 0px 0px;
+  }
+
   .hero {
     padding: 228px 0px 178px;
   }
@@ -779,6 +829,27 @@ footer .footer-navlist li a {
 
   .aboutus-wrapper {
     padding-bottom: 60px;
+  }
+
+  .navbar-nav .nav-item:nth-child(1) {
+    padding-left: 0px;
+  }
+
+  .process-wrapper .cards-wrapper .card p::after {
+    top: -80%;
+    right: 50%;
+    left: unset;
+  }
+
+  .process-wrapper .cards-wrapper .row div:not(:last-child) p::before {
+    width: calc(100% + 25px);
+    height: 1px;
+    top: -80%;
+    left: 50%;
+  }
+
+  .process-wrapper .card p {
+    padding: 0px;
   }
 }
 

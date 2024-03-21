@@ -56,7 +56,9 @@
             </div>
         </div>
     </header>  -->
-    <header class="content-inner">
+    <header >
+        <div class="content-inner"
+        >
         <nav class="navbar navbar-expand-lg navbar-light py-0">
             <div class="container-fluid">
                 <div class="logo">
@@ -64,13 +66,13 @@
                         <img src="./assets/images/logo.png" alt="logo">
                     </a>
                 </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
+                <div class="collapse navbar-collapse text-center" id="navbarNavDropdown">
+                    <ul class="navbar-nav align-items-center">
                         <li class="nav-item">
                             <a class="nav-link active p-0" aria-current="page" href="javascript:void(0)">Home</a>
                         </li>
@@ -90,13 +92,16 @@
                                 Plan</a>
                         </li>
                     </ul>
+                    <a href="javascript:void(0)" class="btn btn-dark btn-lg default-btn d-lg-none" tabindex="-1" role="button"
+                        aria-disabled="true">Login</a>
                 </div>
                 <a href="javascript:void(0)" class="btn btn-dark btn-lg default-btn d-none d-lg-block" tabindex="-1" role="button"
                 aria-disabled="true">Login</a>
             </div>
-        </nav>
+        </nav></div>
+        
     </header>
-    
+
     <!-- header ends -->
     <!-- hero starts -->
     <section class="hero">
@@ -236,7 +241,7 @@
     <section class="aboutus-wrapper">
         <div class="container-fluid gx-0">
             <div class="content-inner">
-                <div class="row gx-0 align-items-center gy-4 gy-lg-0">
+                <div class="row gx-0 align-items-center  gy-4 gy-lg-0">
                     <div class="col-xl-9 mx-auto gx-5">
                         <h2 class="section-heading">Who we are</h2>
                         <p class="section-description">Ketengo is B2B application for customers which helps them to
@@ -276,42 +281,42 @@
     </section>
     <!-- about-us section ends -->
     <!-- process-section wrapper starts -->
-    <!-- <section class="process-wrapper">
+    <section class="process-wrapper">
         <div class="container-fluid">
             <div class="content-inner">
                 <div class="row">
-                    <div class="col-8 mx-auto">
+                    <div class="col-lg-8 mx-auto">
                         <h2 class="section-heading">How it works</h2>
                         <p class="section-description">Anyone can start using Ketengo with minimum skills. We offer you
                             a super intuitive interface. As soon as you at your customary try the app,, it will take
                             almost no time to get going.
                         </p>
                     </div>
-                    <div class="col-7 mx-auto">
+                    <div class="col-lg-9 col-xl-8 mx-auto">
                         <div class="cards-wrapper">
                             <div class="row">
-                                <div class="col-3">
+                                <div class="col-12 col-lg-3">
                                     <div class="card border-0">
                                         <p>
                                             Show multiple product images
                                         </p>
                                     </div>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-12 col-lg-3">
                                     <div class="card border-0">
                                         <p>
                                             Customize the product information
                                         </p>
                                     </div>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-12 col-lg-3">
                                     <div class="card border-0">
                                         <p>
                                             Submit orders directly to your ERP
                                         </p>
                                     </div>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-12 col-lg-3">
                                     <div class="card border-0">
                                         <p>
                                             Send catelogs directly from app
@@ -324,7 +329,7 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section> 
     <!-- process-section wrapper ends -->
     <!-- pricing section starts -->
     <section class="pricing-wrapper">
@@ -571,6 +576,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+        <script src="./assets/js/custom.js"></script>
 </body>
 
 </html>
